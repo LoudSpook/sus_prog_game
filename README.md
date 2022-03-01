@@ -1,2 +1,2 @@
-# sus_prog_proj1
-Sustainable programming project 1
+# sus_prog_game
+Sustainable programming game
