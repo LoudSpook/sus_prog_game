@@ -2,4 +2,4 @@
 
 ------------------------
 
-Added the project template, development can begin.
+* Added the project template, development can begin.
