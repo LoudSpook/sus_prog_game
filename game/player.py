@@ -1,8 +1,9 @@
 
 
 class Player():
-    pass
+    name = ""
+    score = 0
 
 
 if __name__ == '__main__':
-    pass
+    player = Player()
