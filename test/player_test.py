@@ -9,7 +9,7 @@ class TestPlayerClass(unittest.TestCase):
     def test_init_player_object(self):
         """Instantiate a player object"""
         player1 = player.Player()
-        self.assertIsInstance(player, player.Player)
+        self.assertIsInstance(player1, player.Player)
 
 
 if __name__ == '__main__':
