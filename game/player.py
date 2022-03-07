@@ -15,10 +15,13 @@ class Player():
         while keep_going:
             name = input("Select your name: ")
 
-            if forbidden_word not in name:
-                keep_going = False
+            if name:
+                if forbidden_word not in name:
+                    keep_going = False
+                else:
+                    print('Name can not contain "BOT"!')
             else:
-                print('Name can not contain "BOT"!')
+                print("Name can not be empty!")
 
         print("Name set!")
         return name
