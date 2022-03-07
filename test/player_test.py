@@ -22,12 +22,10 @@ class TestPlayerClass(unittest.TestCase):
     def test_select_name(self):
         """Select a player name and check if variable name changed correctly"""
         player1 = player.Player()
-
-        player1.name = player1.select_name()
+        name = player1.select_name()
         err = ""
 
-        self.assertNotEqual(err, player1.name)
-        self.assertEqual(player1.name, player1.select_name)
+        self.assertNotEqual(err, name)
 
 
 
