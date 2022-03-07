@@ -4,8 +4,9 @@
 class Player():
     """Handles the player object."""
 
-    name = ""
-    score = 0
+    def __init__(self):
+        self.name = ""
+        self.score = 0
 
     def select_name(self):
         """Lets players select their name."""
