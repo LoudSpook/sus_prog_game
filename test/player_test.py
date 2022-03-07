@@ -4,10 +4,10 @@ import unittest
 from game import player
 
 class TestPlayerClass(unittest.TestCase):
-    """Testing the class"""
+    """Testing the class."""
 
     def test_init_player_object(self):
-        """Instantiate a player object"""
+        """Instantiate a player object and test its base values."""
         player1 = player.Player()
         self.assertIsInstance(player1, player.Player)
 
@@ -18,6 +18,21 @@ class TestPlayerClass(unittest.TestCase):
         res2 = player1.score
         exp2 = 0
         self.assertEqual(res2, exp2)
+
+    def test_select_name(self):
+        """Select a player name and check if variable name changed correctly"""
+        player1 = player.Player()
+        player2 = player.Player()
+
+        player1.name = player1.select_name()
+        player2.name = player2.select_name()
+        err = ""
+
+        self.assertNotEqual(err, player1.name)
+        self.assertEqual(player1.name, player1.select_name)
+        self.assertNotEqual(player1.name, player2.name)
+
+
 
 
 if __name__ == '__main__':
