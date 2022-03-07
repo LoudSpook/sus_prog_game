@@ -66,7 +66,7 @@ pylint:
 
 flake8:
 	@$(call MESSAGE,$@)
-	-flake8
+	-cd game && $(PYTHON) -m flake8 *.py
 
 lint: flake8 pylint
 
