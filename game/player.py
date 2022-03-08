@@ -27,10 +27,26 @@ class Player():
         print("Name set!")
         return self.name
 
+    def change_name(self):
+        """Lets players change their names"""
+        current_name = self.name
+        new_name = self.select_name()
+
+        if current_name == new_name:
+            print("You already have this name!")
+            self.name = current_name
+        else:
+            print("Name changed!")
+
+        return self.name
+
 
 
 
 if __name__ == '__main__':
     player = Player()
     name = player.select_name()
+    print(name)
+
+    name = player.change_name()
     print(name)

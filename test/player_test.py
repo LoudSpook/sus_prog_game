@@ -19,9 +19,9 @@ class TestPlayerClass(unittest.TestCase):
         exp2 = 0
         self.assertEqual(res2, exp2)
 
-    def test_select_name(self):
-        """Select a player name and tests if the name was
-        properly changed"""
+    def test_name(self):
+        """Selects and changes a player name and tests if the name was
+        properly changed both times"""
         player1 = player.Player()
         name = player1.select_name()
         err = ""
@@ -29,12 +29,9 @@ class TestPlayerClass(unittest.TestCase):
         self.assertNotEqual(err, player1.name)
         self.assertEqual(player1.name, name)
 
-    def test_change_name(self):
-        """Tries changing the player name and checks if it actually changes."""
-        player1 = player.Player()
-        name = player1.select_name()
-        player1.change_name()
-        self.assertEqual(player1.name, name)
+        new_name = player1.change_name()
+        self.assertNotEqual(name, new_name)
+        self.assertEqual(player1.name, new_name)
 
 
 
