@@ -1,5 +1,11 @@
 Release history
 ========================
+v0.3.0 (2022-03-08)
+------------------------
+Added the add_score function which adds the score a player collected during
+their turn to their total. Also modified test_add_score so it will try to
+add a value. The player class is mostly complete now.
+
 v0.2.0 (2022-03-08)
 ------------------------
 Added the change_name function which allows players to change their names.
