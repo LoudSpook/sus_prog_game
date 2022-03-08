@@ -29,11 +29,12 @@ class TestPlayerClass(unittest.TestCase):
         self.assertNotEqual(err, player1.name)
         self.assertEqual(player1.name, name)
 
-    #def test_change_name(self):
-        #"""Tries changing the player name and checks if it actually changes."""
-        #player1 = player.Player()
-        #name1 = player1.select_name()
-        #name2
+    def test_change_name(self):
+        """Tries changing the player name and checks if it actually changes."""
+        player1 = player.Player()
+        name = player1.select_name()
+        player1.change_name()
+        self.assertEqual(player1.name, name)
 
 
 
