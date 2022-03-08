@@ -1,11 +1,11 @@
-"""Handles most things related to the player(s)."""
+"""Handle most things related to the player(s)."""
 
 
 class Player():
-    """Handles the player object."""
+    """Handle the player object."""
 
     def __init__(self):
-        """Set default values to an object."""
+        """Set default values to the object."""
         self.name = ""
         self.score = 0
 
