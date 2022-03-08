@@ -19,14 +19,15 @@ class TestPlayerClass(unittest.TestCase):
         exp2 = 0
         self.assertEqual(res2, exp2)
 
-    def test_select_name(self): #MÖJLIGTVIS GÖR SÅ DEN KOLLAR OM NAMNET FAKTISKT ÄNDRAS MED
-        """Select a player name and tests if the name is empty
-        (empty is not allowed)."""
+    def test_select_name(self):
+        """Select a player name and tests if the name was
+        properly changed"""
         player1 = player.Player()
         name = player1.select_name()
         err = ""
 
-        self.assertNotEqual(err, name)
+        self.assertNotEqual(err, player1.name)
+        self.assertEqual(player1.name, name)
 
     #def test_change_name(self):
         #"""Tries changing the player name and checks if it actually changes."""

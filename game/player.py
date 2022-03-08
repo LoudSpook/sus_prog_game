@@ -14,10 +14,10 @@ class Player():
         forbidden_word = "BOT"
 
         while keep_going:
-            name = input("Select your name: ")
+            self.name = input("Select your name: ")
 
-            if name:
-                if forbidden_word not in name:
+            if self.name:
+                if forbidden_word not in self.name:
                     keep_going = False
                 else:
                     print('Name can not contain "BOT"!')
@@ -25,7 +25,7 @@ class Player():
                 print("Name can not be empty!")
 
         print("Name set!")
-        return name
+        return self.name
 
 
 
