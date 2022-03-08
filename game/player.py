@@ -5,11 +5,12 @@ class Player():
     """Handles the player object."""
 
     def __init__(self):
+        """Set default values to an object."""
         self.name = ""
         self.score = 0
 
     def select_name(self):
-        """Lets players select their name."""
+        """Let players select their name."""
         keep_going = True
         forbidden_word = "BOT"
 
@@ -28,7 +29,7 @@ class Player():
         return self.name
 
     def change_name(self):
-        """Lets players change their names"""
+        """Let players change their names."""
         current_name = self.name
         new_name = self.select_name()
 
@@ -41,23 +42,11 @@ class Player():
         return self.name
 
     def add_score(self, rolls):
-        """Adds a players score from that round to their total"""
+        """Add a players score from that round to their total."""
         self.score += rolls
 
         return self.score
 
 
-
-
 if __name__ == '__main__':
-    #Used for testing purposes
     player = Player()
-    name = player.select_name()
-    print(name)
-
-    name = player.change_name()
-    print(name)
-
-    print("Your score is:", player.score)
-    score = player.add_score(3)
-    print("Your score is now:", score)
