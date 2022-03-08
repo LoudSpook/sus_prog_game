@@ -21,7 +21,7 @@ class TestPlayerClass(unittest.TestCase):
 
     def test_name(self):
         """Selects and changes a player name and tests if the name was
-        properly changed both times"""
+        properly changed both times (choose two different names)"""
         player1 = player.Player()
         name = player1.select_name()
         err = ""
@@ -34,10 +34,13 @@ class TestPlayerClass(unittest.TestCase):
         self.assertEqual(player1.name, new_name)
 
     def test_add_score(self):
-        """Tests if a players score is added correctly"""
+        """Adds a score of 3 to the players total and
+        tests if it is added correctly"""
         player1 = player.Player()
-        player1.add_score(rolls)
+        old_score = player1.score
+        player1.add_score(3)
         self.assertNotEqual(0, player1.score)
+        self.assertNotEqual(old_score, player1.score)
 
 
 

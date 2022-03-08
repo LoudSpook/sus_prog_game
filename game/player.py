@@ -40,13 +40,24 @@ class Player():
 
         return self.name
 
+    def add_score(self, rolls):
+        """Adds a players score from that round to their total"""
+        self.score += rolls
+
+        return self.score
+
 
 
 
 if __name__ == '__main__':
+    #Used for testing purposes
     player = Player()
     name = player.select_name()
     print(name)
 
     name = player.change_name()
     print(name)
+
+    print("Your score is:", player.score)
+    score = player.add_score(3)
+    print("Your score is now:", score)
