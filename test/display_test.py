@@ -4,7 +4,6 @@ from itertools import count
 import unittest
 import sys
 from game import display
-from game import player
 
 class TestDisplay(unittest.TestCase):
  
@@ -18,8 +17,9 @@ class TestDisplay(unittest.TestCase):
     
     def test_display_graphics(self):
         """Testing if graphics are displayed"""
+        testsentence = 'Testing'
         displayer = display.Display()
-        res = displayer.display_graphics()
+        res = displayer.display_graphics(testsentence)
         
         """Prepare to capture the output"""
         capturedOutput = io.StringIO()
@@ -41,7 +41,7 @@ class TestDisplay(unittest.TestCase):
         """Uses a test list to test display_highscore"""
         displayer = display.Display()
         test_list = [('Pelle', 50),('Anders', 20),('Bengt', 30)]
-        exp = displayer.display_highscore(test_list)
+        exp = displayer.display_highscore((test_list))
         err = ''
         self.assertNotEqual(exp, err)
 
