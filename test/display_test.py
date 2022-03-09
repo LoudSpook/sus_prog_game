@@ -17,7 +17,7 @@ class TestDisplay(unittest.TestCase):
     def test_display_graphics(self):
         """Testing if graphics are displayed"""
         displayer = display.Display()
-        blank = ''
+        res = displayer.display_graphics()
         
         """Prepare to capture the output"""
         capturedOutput = io.StringIO()
@@ -33,7 +33,7 @@ class TestDisplay(unittest.TestCase):
         output = capturedOutput.getvalue()
         
         """See if the graphic is printed"""
-        self.assertTrue(displayer.display_graphics in output)
+        self.assertTrue(str(res) in output)
         
         
 if __name__ == '__main__':
