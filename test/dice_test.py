@@ -9,8 +9,11 @@ class TestDiceClass(unittest.TestCase):
     def test_init_dice_object(self):
         """Instantiate a dice object and test its values"""
         die = dice.Dice()
-        self.assertIsInstance(die, dice.Dice())
+        self.assertIsInstance(die, dice.Dice)
 
         res = die.faces
         exp = 6
         self.assertEqual(res, exp)
+
+if __name__ == '__main__':
+    unittest.main()
