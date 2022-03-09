@@ -33,7 +33,7 @@ class TestDisplay(unittest.TestCase):
         output = capturedOutput.getvalue()
         
         """See if the graphic is printed"""
-        self.assertTrue(res in output)
+        self.assertTrue(str(res) in output)
         
         
 if __name__ == '__main__':
