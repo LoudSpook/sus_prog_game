@@ -7,7 +7,7 @@ class TestDiceClass(unittest.TestCase):
     """Testing the calss."""
 
     def test_init_dice_object(self):
-        """Instantiate a dice object and test its values"""
+        """Instantiate a dice object and test its values."""
         die = dice.Dice()
         self.assertIsInstance(die, dice.Dice)
 
@@ -16,7 +16,7 @@ class TestDiceClass(unittest.TestCase):
         self.assertEqual(res, exp)
 
     def test_roll_dice(self):
-        """Rolls a dice and tests the roll"""
+        """Roll a dice and test the roll."""
         die = dice.Dice()
         roll = die.roll_dice()
         expected = 1 <= roll <= die.faces
