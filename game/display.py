@@ -1,5 +1,5 @@
 
-class displayer:
+class Display:
     
     def __init__(self):
         self.rules = ['1. Do not cheat', '2. Do not swear', '3. Do not fight', '4. Have fun']
@@ -9,6 +9,6 @@ class displayer:
     
 
 if __name__ == '__main__':
-    displayer = displayer()
+    displayer = Display()
     print(displayer.display_rules())
     
