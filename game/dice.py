@@ -20,9 +20,11 @@ class Dice():
         return roll
 
     def get_rolls_made(self):
+        """Return rolls_made."""
         return self.rolls_made
 
     def clean_rolls_made (self):
+        """Reset rolls_made back to 0."""
         self.rolls_made = 0
         return self.rolls_made
 
@@ -30,8 +32,3 @@ class Dice():
 
 if __name__ == '__main__':
     die = Dice()
-    roll = die.roll_dice()
-    print(roll)
-    print(die.get_rolls_made())
-    die.clean_rolls_made()
-    print(die.get_rolls_made())
