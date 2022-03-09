@@ -15,5 +15,12 @@ class TestDiceClass(unittest.TestCase):
         exp = 6
         self.assertEqual(res, exp)
 
+    def test_roll_dice(self):
+        """Rolls a dice and tests the roll"""
+        die = dice.Dice()
+        roll = die.roll_dice()
+        expected = 1 <= roll <= die.faces
+        self.assertEqual(roll, expected)
+
 if __name__ == '__main__':
     unittest.main()
