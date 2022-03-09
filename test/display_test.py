@@ -11,8 +11,8 @@ class TestDisplay(unittest.TestCase):
         displayer = display.Display()
         rules = displayer.display_rules()
         
-        exp = ['1. Do not cheat', '2. Do not swear', '3. Do not fight', '4. Have fun']
-        self.assertListEqual(rules,exp)
+        expected = ['1. Do not cheat', '2. Do not swear', '3. Do not fight', '4. Have fun']
+        self.assertListEqual(rules,expected)
     
     def test_display_graphics(self):
         """Testing if graphics are displayed"""
@@ -33,7 +33,7 @@ class TestDisplay(unittest.TestCase):
         output = capturedOutput.getvalue()
         
         """See if the graphic is printed"""
-        self.assertTrue(str(res) in output)
+        self.assertTrue(res in output)
         
         
 if __name__ == '__main__':
