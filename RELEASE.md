@@ -1,5 +1,14 @@
 Release history
 ========================
+v0.5.0 (2022-03-09)
+------------------------
+Added the get_rolls_made function which returns the amount of rolls made.
+
+v0.4.0 (2022-03-09)
+------------------------
+Added the roll_dice function which lets the players roll a dice.
+It also helps keep track of the amount of rolls made.
+
 v0.3.0 (2022-03-08)
 ------------------------
 Added the add_score function which adds the score a player collected during
