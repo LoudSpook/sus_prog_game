@@ -21,7 +21,7 @@ class Display:
     def display_highscore(self):
         """reads from txt file"""
         highscore_list = []
-        HIGHSCORE_FILE = 'C:/Users/David Trang/Ass2Game/sus_prog_game/game/highscore.txt'
+        HIGHSCORE_FILE = 'C:/Users/David Trang/Ass2Game/sus_prog_game/game/highscores.txt'
         with open(HIGHSCORE_FILE, 'r') as highscore_file:
             for line in highscore_file:
                 name, score = line.split(':')
