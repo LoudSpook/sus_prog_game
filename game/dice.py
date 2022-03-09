@@ -19,6 +19,9 @@ class Dice():
 
         return roll
 
+    def get_rolls_made(self):
+        return self.rolls_made
+
 
 
 if __name__ == '__main__':
