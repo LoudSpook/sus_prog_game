@@ -1,5 +1,10 @@
 Release history
 ========================
+v0.6.0 (2022-03-09)
+------------------------
+Implemented the clean_rolls_made function which "cleans" the
+rolls_made variable by resetting it to 0.
+
 v0.5.0 (2022-03-09)
 ------------------------
 Added the get_rolls_made function which returns the amount of rolls made.
