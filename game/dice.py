@@ -2,6 +2,7 @@
 
 import random
 
+
 class Dice():
     """Handle the dice object."""
 
@@ -13,7 +14,7 @@ class Dice():
         random.seed()
 
     def roll_dice(self):
-        """Rolls a dice."""
+        """Roll a dice."""
         roll = random.randint(1, self.faces)
         self.rolls_made += 1
 
@@ -23,11 +24,10 @@ class Dice():
         """Return rolls_made."""
         return self.rolls_made
 
-    def clean_rolls_made (self):
+    def clean_rolls_made(self):
         """Reset rolls_made back to 0."""
         self.rolls_made = 0
         return self.rolls_made
-
 
 
 if __name__ == '__main__':

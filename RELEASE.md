@@ -4,6 +4,7 @@ v0.6.0 (2022-03-09)
 ------------------------
 Implemented the clean_rolls_made function which "cleans" the
 rolls_made variable by resetting it to 0.
+The dice class is complete now.
 
 v0.5.0 (2022-03-09)
 ------------------------
@@ -18,7 +19,7 @@ v0.3.0 (2022-03-08)
 ------------------------
 Added the add_score function which adds the score a player collected during
 their turn to their total. Also modified test_add_score so it will try to
-add a value. The player class is mostly complete now.
+add a value. The player class is complete now.
 
 v0.2.0 (2022-03-08)
 ------------------------
