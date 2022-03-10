@@ -14,10 +14,10 @@ class Display:
                 my_output = ("_"*(size*2))
                 print(my_output)
             elif row == (size/2):
-                sentence_to_print = ((sentence).center(size*2, '>'))
+                print(sentence)
             elif (row % 2 == 0):
                 print(' ' * (size+2))
-        return sentence_to_print
+
     
     def display_highscore(self):
         """reads from txt file"""
@@ -34,7 +34,7 @@ class Display:
         displayer = Display()
         counter = 1
         for name, score in highscore_list:
-            one_highscore = displayer.display_graphics((f' Number.{counter} {name} --> {score} Rolls'))
+            one_highscore = displayer.display_graphics((f' Number. {counter} {name} --> {score} Rolls'))
             counter += 1
             print(one_highscore)
     
