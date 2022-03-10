@@ -30,10 +30,13 @@ class Display:
         highscore_file.close
         
         """loops each highscore on the list"""
+        displayer = Display()
         counter = 1
         for name, score in highscore_list:
-            displayer.display_graphics(str(f' Number.{counter} {name} --> {score} Rolls'))
+            displayer.display_graphics((f' Number.{counter} {name} --> {score} Rolls'))
             counter += 1
+    
+
         
 if __name__ == '__main__':
     displayer = Display()
