@@ -15,10 +15,10 @@ class TestDisplay(unittest.TestCase):
     def test_display_graphics(self):
         """Testing if graphics are displayed"""
         displayer = display.Display()
-        testsentence = ""
+        testsentence = "My test sentence"
         
         res = displayer.display_graphics(testsentence)
-        exp = displayer.display_graphics()
+        exp = displayer.display_graphics("My test sentence")
         self.assertEqual(res,exp)
         
     
