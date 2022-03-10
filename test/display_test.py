@@ -26,7 +26,7 @@ class TestDisplay(unittest.TestCase):
         sys.stdout = capturedOutput
         
         """Call the method """
-        displayer.display_graphics()
+        displayer.display_graphics(testsentence)
         
         """Reset the capture"""
         sys.stdout = sys.__stdout__
@@ -41,7 +41,7 @@ class TestDisplay(unittest.TestCase):
         """Uses a test list to test display_highscore"""
         displayer = display.Display()
         test_list = [('Pelle', 50),('Anders', 20),('Bengt', 30)]
-        exp = displayer.display_highscore((test_list))
+        exp = displayer.display_highscore(test_list)
         err = ''
         self.assertNotEqual(exp, err)
 

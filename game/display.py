@@ -28,6 +28,7 @@ class Display:
                 highscore_list.append((name, int(score)))
         highscore_list = sorted(highscore_list)
         highscore_file.close
+        
         """loops each highscore on the list"""
         counter = 1
         for name, score in highscore_list:
