@@ -33,15 +33,14 @@ class TestDisplay(unittest.TestCase):
         
         """Get the catured output"""
         output = capturedOutput.getvalue()
-        
+        print(output)
         """See if the graphic is printed"""
         self.assertTrue(str(res) in output)
     
     def test_display_highscore(self):
-        """Uses a test list to test display_highscore"""
+        """Tests if it actually displays anything"""
         displayer = display.Display()
-        test_list = [('Pelle', 50),('Anders', 20),('Bengt', 30)]
-        exp = displayer.display_highscore(test_list)
+        exp = displayer.display_highscore()
         err = ''
         self.assertNotEqual(exp, err)
 
